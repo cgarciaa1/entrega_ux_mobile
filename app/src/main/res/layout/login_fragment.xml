@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="co.edu.uniandes.app.movil202311.view.AlarmFragment">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+
+        android:background="@color/white_background"
+        android:id="@+id/tool_bar_main">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/tool_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:titleTextColor="@color/violet_background_button"
+            app:title="@string/app_name" >
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+     <LinearLayout
+        android:layout_marginTop="90dp"
+        android:id="@+id/ll_main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/layout_bg"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp">
+
+        <TextView
+            android:textColor="@color/violet_background_button"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="30dp"
+            android:text="@string/login"
+            android:backgroundTint="@color/violet_background_button"
+            android:textSize="25sp"/>
+
+         <com.google.android.material.textfield.TextInputLayout
+             android:id="@+id/text_input_layout_outlined2"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginStart="15dp"
+             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+             app:boxStrokeColor="@color/violet_background_button"
+             app:hintTextAppearance="@style/MyHintStyle">
+
+             <com.google.android.material.textfield.TextInputEditText
+                 app:boxBackgroundColor="@color/violet_background_button"
+                 android:textColorHighlight="@color/violet_background_button"
+                 android:layout_width="match_parent"
+                 android:layout_height="60dp"
+
+                 android:layout_marginTop="5dp"
+                 android:layout_marginEnd="15dp"
+                 android:autofillHints=""
+                 android:backgroundTint="@color/violet_background_button"
+                 android:layout_marginBottom="5dp"
+                 android:hint="@string/input_user"
+                 android:inputType="text"
+                 android:padding="10dp"
+                 android:textAlignment="textStart"
+                 android:textColorHint="@color/violet_background_button" />
+
+         </com.google.android.material.textfield.TextInputLayout>
+
+         <com.google.android.material.textfield.TextInputLayout
+             android:id="@+id/text_input_layout_outlined"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginStart="15dp"
+             android:layout_marginTop="15dp"
+
+             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+             app:boxStrokeColor="@color/violet_background_button"
+             app:hintTextAppearance="@style/MyHintStyle">
+
+             <com.google.android.material.textfield.TextInputEditText
+                 app:boxBackgroundColor="@color/violet_background_button"
+                 android:textColorHighlight="@color/violet_background_button"
+                 android:layout_width="match_parent"
+                 android:layout_height="60dp"
+
+                 android:layout_marginEnd="15dp"
+                 android:layout_marginTop="5dp"
+                 android:layout_marginBottom="5dp"
+                 android:autofillHints=""
+                 android:backgroundTint="@color/violet_background_button"
+
+                 android:hint="Contraseña"
+                 android:inputType="textPassword"
+                 android:padding="10dp"
+                 android:textAlignment="textStart"
+                 android:textColorHint="@color/violet_background_button" />
+
+         </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="25dp"
+            android:orientation="horizontal">
+            <com.google.android.material.button.MaterialButton
+
+                android:id="@+id/button_login_form"
+                android:text="@string/login_form_button_action"
+                android:textAllCaps="false"
+                app:cornerRadius="60dp"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:textColor="@color/white_background"
+                app:backgroundTint="@color/violet_background_button"
+                android:layout_gravity="center_vertical|end"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+</FrameLayout>

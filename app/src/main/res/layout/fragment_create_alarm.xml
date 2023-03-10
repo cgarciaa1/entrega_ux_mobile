@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="co.edu.uniandes.app.movil202311.view.CreateAlbumFragment"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <LinearLayout
+        android:id="@+id/new_alarm_main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/white_background"
+            android:id="@+id/tool_bar_main">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/tool_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:titleTextColor="@color/violet_background_button"
+                app:title="@string/app_name" >
+            </androidx.appcompat.widget.Toolbar>
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:id="@+id/name_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/layout_bg"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp">
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/text_input_layout_outlined2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:boxStrokeColor="@color/violet_background_button"
+                app:hintTextAppearance="@style/MyHintStyle">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    app:boxBackgroundColor="@color/violet_background_button"
+                    android:textColorHighlight="@color/violet_background_button"
+
+                    android:layout_height="55dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="15dp"
+
+                    android:layout_marginEnd="15dp"
+                    android:layout_width="match_parent"
+                    android:autofillHints=""
+                    android:backgroundTint="@color/violet_background_button"
+                    android:hint="Nombre"
+                    android:inputType="text"
+                    android:padding="10dp"
+                    android:textAlignment="textStart"
+                    android:textColorHint="@color/violet_background_button" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:id="@+id/time_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/layout_bg"
+            android:layout_marginStart="10dp"
+
+            android:layout_marginEnd="10dp">
+
+
+
+            <EditText
+            android:text="00"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:id="@+id/input_alarm_time_hour"
+            android:backgroundTint="@color/violet_background_button"
+            android:layout_height="60dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="5dp"
+            android:padding="10dp"
+
+            android:layout_width="70dp"
+            android:autofillHints=""
+            android:maxLength="2"
+            android:inputType="datetime"
+            android:textColor="@color/white_background"
+            android:background="@color/violet_background_button"    />
+
+            <TextView
+                android:id="@+id/input_album_record"
+                android:hint=":"
+                android:backgroundTint="@color/green_background"
+                android:textAlignment="textStart"
+                android:layout_width="50dp"
+                android:padding="20dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="15dp"
+                android:autofillHints=""
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:inputType="text"/>
+
+            <EditText
+                android:text="00"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:id="@+id/input_alarm_time_minute"
+                android:layout_width="70dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="10dp"
+                android:autofillHints=""
+                android:maxLength="2"
+                android:backgroundTint="@color/lila_background_button"
+                android:inputType="datetime"
+                android:padding="10dp"
+                android:background="@color/lila_background_button" />
+
+            <LinearLayout
+
+                android:id="@+id/am_pm_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="30dp">
+
+               <com.google.android.material.button.MaterialButton
+                    android:id="@+id/button_am"
+                    android:text="AM"
+                    android:textAllCaps="false"
+                    app:cornerRadius="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white_background"
+                    app:backgroundTint="@color/violet_background_button"
+                    android:layout_gravity="center_vertical|end"/>
+                <com.google.android.material.button.MaterialButton
+
+                    android:id="@+id/button_pm"
+                    android:text="PM"
+                    android:textAllCaps="false"
+                    app:cornerRadius="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    app:backgroundTint="@color/white_background"
+                    android:layout_gravity="center_vertical|end"
+                    />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+       <LinearLayout
+            android:layout_marginTop="20dp"
+            android:id="@+id/date_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/layout_bg"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp">
+
+           <com.google.android.material.textfield.TextInputLayout
+               android:id="@+id/text_input_layout_outlined3"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginStart="15dp"
+               android:layout_marginTop="10dp"
+
+               style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+               app:boxStrokeColor="@color/violet_background_button"
+               app:hintTextAppearance="@style/MyHintStyle">
+
+               <com.google.android.material.textfield.TextInputEditText
+                   app:boxBackgroundColor="@color/violet_background_button"
+                   android:textColorHighlight="@color/violet_background_button"
+
+                   android:layout_height="55dp"
+                   android:layout_marginTop="10dp"
+                   android:layout_marginBottom="5dp"
+
+                   android:layout_marginEnd="15dp"
+                   android:layout_width="match_parent"
+                   android:autofillHints=""
+                   android:backgroundTint="@color/violet_background_button"
+                   android:hint="Fecha"
+                   android:inputType="datetime"
+                   android:padding="10dp"
+                   android:textAlignment="textStart"
+                   android:textColorHint="@color/violet_background_button"
+                   android:drawableRight="@drawable/ic_baseline_calendar_today_24"
+                   android:tint="@color/white_background"
+                   app:backgroundTint="@color/violet_background_button"
+                   />
+
+           </com.google.android.material.textfield.TextInputLayout>
+
+           <TextView
+               android:id="@+id/text_format_Date"
+               android:layout_width="150dp"
+               android:layout_height="30dp"
+               android:autofillHints=""
+               android:backgroundTint="@color/green_background"
+               android:hint="YYYY-MM-DD"
+               android:inputType="text"
+               android:paddingStart="18dp"
+               android:textAlignment="textStart"
+               android:textColorHint="@color/violet_background_button"
+               android:textSize="15sp" />
+       </LinearLayout>
+       <LinearLayout
+            android:layout_marginTop="20dp"
+            android:id="@+id/image_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/layout_bg"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp">
+
+
+           <com.google.android.material.button.MaterialButton
+
+               android:id="@+id/input_alarm_image"
+               android:text="Imagen"
+               android:textAllCaps="false"
+               app:cornerRadius="5dp"
+               android:textColor="@color/violet_background_button"
+               app:backgroundTint="@color/white_background"
+               android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:padding="10dp"
+                android:textAlignment="textStart"
+                android:layout_width="match_parent"
+                android:autofillHints=""
+               app:iconGravity="end"
+               app:icon="@drawable/ic_baseline_upgrade_24"
+            />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="25dp"
+            android:orientation="horizontal">
+            <com.google.android.material.button.MaterialButton
+
+                android:id="@+id/create_alarm_form"
+                android:text="Crear"
+                android:textAllCaps="false"
+                app:cornerRadius="60dp"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:textColor="@color/white_background"
+                app:backgroundTint="@color/violet_background_button"
+                android:layout_gravity="center_vertical|end"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

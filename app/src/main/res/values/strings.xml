@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Alarma</string>
+    <string name="login_form_button">Iniciar sesión</string>
+    <string name="login_form_button_action">Acceder</string>
+    <string name="login">Iniciar sesión</string>
+    <string name="input_user">Usuario</string>
+    <string name="input_alarm_name">Nombre</string>
+    <string name="input_password">Contraseña</string>
+    <string name="buton_add_album">Agregar</string>
+</resources>
